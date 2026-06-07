@@ -11,19 +11,17 @@ spring:
     url: jdbc:mysql://localhost:3306/dwb_login
     password: demo_123 
     username: dwb
+    driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     open-in-view: false
     show-sql: true
     hibernate:
       ddl-auto: update
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL8Dialect
 
 springdoc:
-    swagger-ui:
-        operations-sorter: method
-        default-model-expand-depth: 5
-        default-model-rendering: model
-    packagesToScan: com.auth_service.api.controller
-    pathsToMatch: /**
+  swagger-ui:
+    operations-sorter: method
+    default-model-expand-depth: 5
+    default-model-rendering: model
+  packagesToScan: com.auth_service.api.controller
+  pathsToMatch: /**
