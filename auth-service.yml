@@ -25,5 +25,5 @@ springdoc:
         operations-sorter: method
         default-model-expand-depth: 5
         default-model-rendering: model
-    packagesToScan: com.unam.dwb.auth.controller
+    packagesToScan: com.auth.controller
     pathsToMatch: /**
